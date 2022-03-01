@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pastelería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="container mx-auto">
+    <div class="">
+      <section class="logo">
+        <img src="/src/assets/img/logo.png" alt="Logo" width="150px">
+      </section>
+      <nav class="">
+        <ul class="flex">
+          <li class="mx-4"><a href="./index.html">Clientes</a></li>
+          <li class="mx-4"><a href="./pastelero.html">Pastelero</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container mx-auto">
+    <h1 class="section-title">Sabores</h1>
+    <section class="sabores">
+      <article class="pastel">
+        <figure>
+          <img src="/src/assets/img/pastel.png" alt="Pastel de chocolate">
+          <figcaption>Chocolate</figcaption>
+        </figure>
+      </article>
+      <article class="pastel">
+        <figure>
+          <img src="/src/assets/img/pastel.png" alt="Pastel de tres leches">
+          <figcaption>Fresa</figcaption>
+        </figure>
+      </article>
+      <article class="pastel">
+        <figure>
+          <img src="/src/assets/img/pastel.png" alt="Pastel de ferrero">
+          <figcaption>Vainilla</figcaption>
+        </figure>
+      </article>
+    </section>
+    <h1 class="section-title">Decoraciones</h1>
+    <section class="decoraciones">
+      <article class="decoracion">
+        <figure>
+          <img src="/src/assets/img/decoration.png" alt="Decoración" width="150px">
+          <figcaption>Chispas de chocolate</figcaption>
+        </figure>
+      </article>
+      <article class="decoracion">
+        <figure>
+          <img src="/src/assets/img/decoration.png" alt="Decoración" width="150px">
+          <figcaption>Mermelada de fresa</figcaption>
+        </figure>
+      </article>
+      <article class="decoracion">
+        <figure>
+          <img src="/src/assets/img/decoration.png" alt="Decoración" width="150px">
+          <figcaption>Dibujo de fondam</figcaption>
+        </figure>
+      </article>
+    </section>
+    <h1 class="section-title">Haga su pedido</h1>
+    <form action="">
+      <div>
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name">
+      </div>
+      <div>
+        <label for="phone">Teléfono</label><br>
+        <input type="tel" name="phone" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}"
+          title="Un número de teléfono válido se compone de un área de código de 3 dígitos entre paréntesis, un espacio, los tres primeros dígitos del número, un espacio o guión (-) y cuatro dígitos más"
+          required>
+      </div>
+      <div>
+        <label for="email">Correo electrónico</label><br>
+        <input type="email" id="email" name="email">
+      </div>
+      <div>
+        <label for="description">Descripción de tu pastel</label><br>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Sabores</legend>
+          <label><input type="checkbox" id="chocolate" value="chocolate"> Chocolate</label><br>
+          <label><input type="checkbox" id="fresa" value="fresa"> Fresa</label><br>
+          <label><input type="checkbox" id="vainilla" value="vainilla"> Vainilla</label><br>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Decoraciones</legend>
+          <label><input type="checkbox" id="chispas_chocolate" value="chispas_chocolate"> Chispas de
+            chocolate</label><br>
+          <label><input type="checkbox" id="mermelada_fresa" value="mermelada_fresa"> Mermelada de fresa</label><br>
+          <label><input type="checkbox" id="fondam" value="fondam"> Dibujo de fondam</label><br>
+        </fieldset>
+      </div>
+      <br>
+      <br>
+      <input type="submit" value="Hacer pedido">
+    </form>
+  </main>
+  <footer class="container mx-auto">
+    <div>
+      <p>La Tía - Pasteles</p>
+      <ul>
+        <li>
+          <address>Some address</address>
+        </li>
+        <li>Teléfono: 983 369 7854</li>
+        <li>Horario: Lun - Vie de 9:00 a 21:00</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

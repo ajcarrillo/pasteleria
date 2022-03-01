@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.debug {
+  border: 1px solid red;
+}
+
+body {
+  @apply bg-red-50;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.section-title {
+  @apply text-center p-4 text-xl
+}
+
+.sabores, .decoraciones {
+  @apply mb-16;
+}
+
+.sabores>.pastel, .decoraciones>.decoracion {
+  @apply border overflow-hidden rounded-xl border-red-100 bg-white shadow-lg cursor-pointer w-full mb-4;
+}
+
+.sabores>.pastel figure img, .decoraciones>.decoracion figure img {
+  @apply object-fill mx-auto w-1/2;
+}
+
+.sabores>.pastel figcaption, .decoraciones>.decoracion figcaption {
+  @apply text-center py-4;
+}
+
+@media (min-width: 768px) {
+  .sabores, .decoraciones {
+    @apply flex;
+  }
+
+  .sabores>.pastel, .decoraciones>.decoracion {
+    @apply w-1/2 mx-4;
+  }
+
+  .sabores>.pastel:hover, .decoraciones>.decoracion:hover {
+    @apply scale-125
+  }
+}
