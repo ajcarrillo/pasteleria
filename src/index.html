@@ -8,66 +8,131 @@
   <title>Pastelería</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="assets/css/pasteleria_build.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="container mx-auto">
-    <div class="">
-      <section class="logo">
-        <img src="assets/img/logo.png" alt="Logo" width="150px">
-      </section>
+  <header class="">
+    <div class="app-bar container mx-auto">
+      <h2 class="app-bar-title font-bold">PASTELES LA TÍA</h2>
       <nav class="">
         <ul class="flex">
-          <li class="mx-4"><a href="./index.html">Clientes</a></li>
-          <li class="mx-4"><a href="./pastelero.html">Pastelero</a></li>
+          <li class="mx-4 text-sm hover:underline"><a href="./index.html">Clientes</a></li>
+          <li class="mx-4 text-sm hover:underline"><a href="./pastelero.html">Pastelero</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="container mx-auto">
-    <h1 class="section-title">Sabores</h1>
-    <section class="sabores">
-      <article class="pastel">
-        <figure>
-          <img src="assets/img/pastel.png" alt="Pastel de chocolate">
-          <figcaption>Chocolate</figcaption>
-        </figure>
-      </article>
-      <article class="pastel">
-        <figure>
-          <img src="assets/img/pastel.png" alt="Pastel de tres leches">
-          <figcaption>Fresa</figcaption>
-        </figure>
-      </article>
-      <article class="pastel">
-        <figure>
-          <img src="assets/img/pastel.png" alt="Pastel de ferrero">
-          <figcaption>Vainilla</figcaption>
-        </figure>
-      </article>
+  <main class="">
+    <section class="hero">
     </section>
-    <h1 class="section-title">Decoraciones</h1>
+    <section class="bg-white mx-4 -mt-32 mb-8">
+      <div class="container py-16">
+        <h1 class="text-center text-3xl uppercase font-bold py-4 text-red-500">Pastelería la Tía</h1>
+        <p class="text-center py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, omnis quas!
+        </p>
+      </div>
+    </section>
+    <section class="sabores">
+      <div class="container px-4">
+        <h1 class="section-title">Sabores</h1>
+        <article class="pastel" id="pastel-chocolate">
+          <header>
+            <figure>
+              <img src="assets/img/chocolate.jpg" alt="Pastel de chocolate">
+              <figcaption>Chocolate</figcaption>
+            </figure>
+          </header>
+          <section class="pastel-description">
+            <h3 class="text-2xl font-bold text-red-500 mb-4">Chocolate</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
+              culpa libero quam
+              vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
+              reprehenderit quas?</p>
+          </section>
+        </article>
+        <article class="pastel" id="pastel-fresa">
+          <header>
+            <figure>
+              <img src="assets/img/fresa.jpg" alt="Pastel de chocolate">
+              <figcaption>Fresa</figcaption>
+            </figure>
+          </header>
+          <section class="pastel-description">
+            <h3 class="text-2xl font-bold text-red-500 mb-4">Fresa</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
+              culpa libero quam
+              vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
+              reprehenderit quas?</p>
+          </section>
+        </article>
+        <article class="pastel" id="pastel-frambuesa">
+          <header>
+            <figure>
+              <img src="assets/img/frambuesa.jpg" alt="Pastel de chocolate">
+              <figcaption>Frambuesa</figcaption>
+            </figure>
+          </header>
+          <section class="pastel-description">
+            <h3 class="text-2xl font-bold text-red-500 mb-4">Frambuesa</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
+              culpa libero quam
+              vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
+              reprehenderit quas?</p>
+          </section>
+        </article>
+      </div>
+    </section>
     <section class="decoraciones">
-      <article class="decoracion">
-        <figure>
-          <img src="assets/img/decoration.png" alt="Decoración" width="150px">
-          <figcaption>Chispas de chocolate</figcaption>
-        </figure>
-      </article>
-      <article class="decoracion">
-        <figure>
-          <img src="assets/img/decoration.png" alt="Decoración" width="150px">
-          <figcaption>Mermelada de fresa</figcaption>
-        </figure>
-      </article>
-      <article class="decoracion">
-        <figure>
-          <img src="assets/img/decoration.png" alt="Decoración" width="150px">
-          <figcaption>Dibujo de fondam</figcaption>
-        </figure>
-      </article>
+      <div class="container px-4">
+        <h1 class="section-title">Decoraciones</h1>
+        <article class="decoracion">
+          <header>
+            <figure>
+              <img src="assets/img/chispas.jpg" alt="Decoración">
+              <figcaption>Chispas</figcaption>
+            </figure>
+          </header>
+          <section class="pastel-description">
+            <h3 class="text-2xl font-bold text-red-500 mb-4">Chispas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
+              culpa libero quam
+              vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
+              reprehenderit quas?</p>
+          </section>
+        </article>
+        <article class="decoracion">
+          <header>
+            <figure>
+              <img src="assets/img/frutas.jpg" alt="Decoración">
+              <figcaption>Frutas</figcaption>
+            </figure>
+          </header>
+          <section class="pastel-description">
+            <h3 class="text-2xl font-bold text-red-500 mb-4">Frutas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
+              culpa libero quam
+              vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
+              reprehenderit quas?</p>
+          </section>
+        </article>
+        <article class="decoracion">
+          <header>
+            <figure>
+              <img src="assets/img/mms.jpg" alt="Decoración">
+              <figcaption>M&M</figcaption>
+            </figure>
+          </header>
+          <section class="pastel-description">
+            <h3 class="text-2xl font-bold text-red-500 mb-4">M&M</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
+              culpa libero quam
+              vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
+              reprehenderit quas?</p>
+          </section>
+        </article>
+      </div>
     </section>
     <h1 class="section-title">Haga su pedido</h1>
     <form action="">

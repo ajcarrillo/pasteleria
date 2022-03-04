@@ -2,26 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --header-height: 40px;
+}
+
 .debug {
   border: 1px solid red;
 }
 
 body {
   @apply bg-red-50;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+header {
+  @apply text-white;
+}
+
+main {
+  margin-top: -42px;
+}
+
+
+.app-bar {
+  @apply flex justify-between py-2;
+  width: 340px;
+}
+
+.hero {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../img/hero.jpg');
+  background-position: 50% 50%;
+  color: white;
+  min-height: 587px;
+}
+
+.hero-container {
+  width: 340px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 4rem;
+  @apply text-center;
+}
+
 .section-title {
-  @apply text-center p-4 text-xl
+  @apply text-center p-4 text-xl uppercase text-red-500 underline-offset-8 underline font-bold mb-4;
 }
 
 .sabores, .decoraciones {
   @apply mb-16;
 }
 
-.sabores>.pastel, .decoraciones>.decoracion {
+.pastel, .decoracion {
+  @apply mb-8 overflow-hidden rounded-t-xl bg-white;
+}
+
+.pastel header, .decoracion header {
+  @apply overflow-hidden;
+  height: 210px;
+}
+
+.pastel figure img, .decoracion figure img {
+  @apply object-none
+}
+
+.pastel-description {
+  @apply p-4
+}
+
+/* .sabores>.pastel, .decoraciones>.decoracion {
   @apply border overflow-hidden rounded-xl border-red-100 bg-white shadow-lg cursor-pointer w-full mb-4;
 }
 
@@ -45,4 +97,4 @@ body {
   .sabores>.pastel:hover, .decoraciones>.decoracion:hover {
     @apply scale-125
   }
-}
+} */
