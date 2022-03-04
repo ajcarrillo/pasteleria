@@ -7,7 +7,9 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
+    container: {
+    },
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 }
