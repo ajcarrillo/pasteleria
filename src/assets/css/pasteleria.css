@@ -27,8 +27,24 @@ main {
 
 
 .app-bar {
-  @apply flex justify-between py-2;
-  width: 340px;
+  @apply flex justify-between p-2 container mx-auto;
+  min-width: 340px;
+}
+
+.app-bar-title {
+  @apply font-bold;
+}
+
+.app-bar-nav>ul {
+  @apply flex;
+}
+
+.app-bar-nav>ul li {
+  @apply mx-4 text-sm;
+}
+
+.app-bar-nav>ul li:hover {
+  @apply underline;
 }
 
 .hero {
@@ -48,11 +64,23 @@ main {
   @apply text-center;
 }
 
+.page-intro {
+  @apply bg-white mx-4 -mt-32 mb-8
+}
+
+.site-title {
+  @apply text-center text-3xl uppercase font-bold py-4 text-red-500;
+}
+
 .section-title {
   @apply text-center p-4 text-xl uppercase text-red-500 underline-offset-8 underline font-bold mb-4;
 }
 
-.sabores, .decoraciones {
+.item-title {
+  @apply text-2xl font-bold text-red-500 mb-4;
+}
+
+.sabores, .decoraciones, .pedidos {
   @apply mb-16;
 }
 
@@ -73,6 +101,34 @@ main {
   @apply p-4
 }
 
+.form-input, .form-textarea {
+  @apply mt-1 mb-4 block w-full rounded-md border-gray-300 shadow-sm;
+}
+
+.form-input:focus, .form-textarea:focus {
+  @apply border-pink-300 ring ring-pink-200 ring-opacity-50
+}
+
+.form-checkbox {
+  @apply rounded border-gray-300 text-pink-600 shadow-sm;
+}
+
+.form-checkbox:focus {
+  @apply border-pink-300 ring ring-offset-0 ring-pink-200 ring-opacity-50
+}
+
+.btn {
+  @apply p-2 rounded text-white font-bold;
+}
+
+.btn-pink {
+  @apply bg-pink-600
+}
+
+.btn-pink:hover {
+  @apply bg-pink-700
+}
+
 /* .sabores>.pastel, .decoraciones>.decoracion {
   @apply border overflow-hidden rounded-xl border-red-100 bg-white shadow-lg cursor-pointer w-full mb-4;
 }
@@ -85,16 +141,19 @@ main {
   @apply text-center py-4;
 }
 
+ */
 @media (min-width: 768px) {
-  .sabores, .decoraciones {
-    @apply flex;
+  .page-intro {
+    max-width: 700px;
+    @apply mx-auto
   }
 
-  .sabores>.pastel, .decoraciones>.decoracion {
-    @apply w-1/2 mx-4;
+  .items-container {
+    @apply grid grid-cols-2 gap-4
   }
 
-  .sabores>.pastel:hover, .decoraciones>.decoracion:hover {
-    @apply scale-125
+  .container {
+    max-width: 700px;
+    @apply mx-auto;
   }
-} */
+}

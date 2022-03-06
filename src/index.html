@@ -13,23 +13,23 @@
 </head>
 
 <body>
-  <header class="">
-    <div class="app-bar container mx-auto">
-      <h2 class="app-bar-title font-bold">PASTELES LA TÍA</h2>
-      <nav class="">
-        <ul class="flex">
-          <li class="mx-4 text-sm hover:underline"><a href="./index.html">Clientes</a></li>
-          <li class="mx-4 text-sm hover:underline"><a href="./pastelero.html">Pastelero</a></li>
+  <header>
+    <div class="app-bar">
+      <h2 class="app-bar-title">PASTELES LA TÍA</h2>
+      <nav class="app-bar-nav">
+        <ul>
+          <li><a href="./index.html">Clientes</a></li>
+          <li><a href="./pastelero.html">Pastelero</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="">
+  <main>
     <section class="hero">
     </section>
-    <section class="bg-white mx-4 -mt-32 mb-8">
+    <section class="page-intro ">
       <div class="container py-16">
-        <h1 class="text-center text-3xl uppercase font-bold py-4 text-red-500">Pastelería la Tía</h1>
+        <h1 class="site-title">Pastelería la Tía</h1>
         <p class="text-center py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, omnis quas!
         </p>
       </div>
@@ -37,154 +37,193 @@
     <section class="sabores">
       <div class="container px-4">
         <h1 class="section-title">Sabores</h1>
-        <article class="pastel" id="pastel-chocolate">
-          <header>
-            <figure>
-              <img src="assets/img/chocolate.jpg" alt="Pastel de chocolate">
-              <figcaption>Chocolate</figcaption>
-            </figure>
-          </header>
-          <section class="pastel-description">
-            <h3 class="text-2xl font-bold text-red-500 mb-4">Chocolate</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
-              culpa libero quam
-              vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
-              reprehenderit quas?</p>
-          </section>
-        </article>
-        <article class="pastel" id="pastel-fresa">
-          <header>
-            <figure>
-              <img src="assets/img/fresa.jpg" alt="Pastel de chocolate">
-              <figcaption>Fresa</figcaption>
-            </figure>
-          </header>
-          <section class="pastel-description">
-            <h3 class="text-2xl font-bold text-red-500 mb-4">Fresa</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
-              culpa libero quam
-              vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
-              reprehenderit quas?</p>
-          </section>
-        </article>
-        <article class="pastel" id="pastel-frambuesa">
-          <header>
-            <figure>
-              <img src="assets/img/frambuesa.jpg" alt="Pastel de chocolate">
-              <figcaption>Frambuesa</figcaption>
-            </figure>
-          </header>
-          <section class="pastel-description">
-            <h3 class="text-2xl font-bold text-red-500 mb-4">Frambuesa</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
-              culpa libero quam
-              vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
-              reprehenderit quas?</p>
-          </section>
-        </article>
+        <div class="items-container">
+          <article class="pastel" id="pastel-chocolate">
+            <header>
+              <figure>
+                <img src="assets/img/chocolate.jpg" alt="Pastel de chocolate">
+                <figcaption>Chocolate</figcaption>
+              </figure>
+            </header>
+            <section class="pastel-description">
+              <h3 class="item-title">Chocolate</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
+                culpa libero quam
+                vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
+                reprehenderit quas?</p>
+            </section>
+          </article>
+          <article class="pastel" id="pastel-fresa">
+            <header>
+              <figure>
+                <img src="assets/img/fresa.jpg" alt="Pastel de chocolate">
+                <figcaption>Fresa</figcaption>
+              </figure>
+            </header>
+            <section class="pastel-description">
+              <h3 class="item-title">Fresa</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
+                culpa libero quam
+                vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
+                reprehenderit quas?</p>
+            </section>
+          </article>
+          <article class="pastel" id="pastel-frambuesa">
+            <header>
+              <figure>
+                <img src="assets/img/frambuesa.jpg" alt="Pastel de chocolate">
+                <figcaption>Frambuesa</figcaption>
+              </figure>
+            </header>
+            <section class="pastel-description">
+              <h3 class="item-title">Frambuesa</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
+                culpa libero quam
+                vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
+                reprehenderit quas?</p>
+            </section>
+          </article>
+        </div>
       </div>
     </section>
     <section class="decoraciones">
       <div class="container px-4">
         <h1 class="section-title">Decoraciones</h1>
-        <article class="decoracion">
-          <header>
-            <figure>
-              <img src="assets/img/chispas.jpg" alt="Decoración">
-              <figcaption>Chispas</figcaption>
-            </figure>
-          </header>
-          <section class="pastel-description">
-            <h3 class="text-2xl font-bold text-red-500 mb-4">Chispas</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
-              culpa libero quam
-              vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
-              reprehenderit quas?</p>
-          </section>
-        </article>
-        <article class="decoracion">
-          <header>
-            <figure>
-              <img src="assets/img/frutas.jpg" alt="Decoración">
-              <figcaption>Frutas</figcaption>
-            </figure>
-          </header>
-          <section class="pastel-description">
-            <h3 class="text-2xl font-bold text-red-500 mb-4">Frutas</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
-              culpa libero quam
-              vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
-              reprehenderit quas?</p>
-          </section>
-        </article>
-        <article class="decoracion">
-          <header>
-            <figure>
-              <img src="assets/img/mms.jpg" alt="Decoración">
-              <figcaption>M&M</figcaption>
-            </figure>
-          </header>
-          <section class="pastel-description">
-            <h3 class="text-2xl font-bold text-red-500 mb-4">M&M</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
-              culpa libero quam
-              vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
-              reprehenderit quas?</p>
-          </section>
-        </article>
+        <div class="items-container">
+          <article class="decoracion">
+            <header>
+              <figure>
+                <img src="assets/img/chispas.jpg" alt="Decoración">
+                <figcaption>Chispas</figcaption>
+              </figure>
+            </header>
+            <section class="pastel-description">
+              <h3 class="item-title">Chispas</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
+                culpa libero quam
+                vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
+                reprehenderit quas?</p>
+            </section>
+          </article>
+          <article class="decoracion">
+            <header>
+              <figure>
+                <img src="assets/img/frutas.jpg" alt="Decoración">
+                <figcaption>Frutas</figcaption>
+              </figure>
+            </header>
+            <section class="pastel-description">
+              <h3 class="item-title">Frutas</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
+                culpa libero quam
+                vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
+                reprehenderit quas?</p>
+            </section>
+          </article>
+          <article class="decoracion">
+            <header>
+              <figure>
+                <img src="assets/img/mms.jpg" alt="Decoración">
+                <figcaption>M&M</figcaption>
+              </figure>
+            </header>
+            <section class="pastel-description">
+              <h3 class="item-title">M&M</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum soluta omnis
+                culpa libero quam
+                vitae unde! Voluptas assumenda adipisci corporis debitis quasi blanditiis, nisi velit! Nostrum vel
+                reprehenderit quas?</p>
+            </section>
+          </article>
+        </div>
       </div>
     </section>
-    <h1 class="section-title">Haga su pedido</h1>
-    <form action="">
-      <div>
-        <label for="name">Nombre:</label><br>
-        <input type="text" id="name" name="name">
+    <section class="pedidos">
+      <div class="container px-4">
+        <h1 class="section-title">Haga su pedido</h1>
+        <form action="">
+          <div>
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" class="form-input">
+          </div>
+          <div>
+            <label for="phone">Teléfono</label><br>
+            <input type="tel" name="phone" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" class="form-input"
+              title="Un número de teléfono válido se compone de un área de código de 3 dígitos entre paréntesis, un espacio, los tres primeros dígitos del número, un espacio o guión (-) y cuatro dígitos más"
+              required>
+          </div>
+          <div>
+            <label for="email">Correo electrónico</label><br>
+            <input type="email" id="email" name="email" class="form-input">
+          </div>
+          <div>
+            <label for="description">Descripción de tu pastel</label><br>
+            <textarea name="description" id="description" rows="3" class="form-textarea"></textarea>
+          </div>
+          <div class="mb-4">
+            <fieldset>
+              <legend class="mb-1">Sabores disponibles</legend>
+              <div>
+                <label class="inline-flex items-center">
+                  <input type="checkbox" id="chocolate" value="chocolate" class="form-checkbox">
+                  <span class="ml-2">Chocolate</span>
+                </label>
+              </div>
+              <div>
+                <label class="inline-flex items-center">
+                  <input type="checkbox" id="fresa" value="fresa" class="form-checkbox">
+                  <span class="ml-2">Fresa</span>
+                </label>
+              </div>
+              <div>
+                <label class="inline-flex items-center">
+                  <input type="checkbox" id="vainilla" value="vainilla" class="form-checkbox">
+                  <span class="ml-2">Frambuesa</span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="">
+            <fieldset>
+              <legend class="mb-1">Decoraciones</legend>
+              <div>
+                <label>
+                  <input type="checkbox" id="chispas_chocolate" value="chispas_chocolate" class="form-checkbox">
+                  <span class="ml-2">Chispas de chocolate</span>
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="checkbox" id="mermelada_fresa" value="mermelada_fresa" class="form-checkbox">
+                  <span class="ml-2">Mermelada de fresa</span>
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="checkbox" id="fondam" value="fondam" class="form-checkbox">
+                  <span class="ml-2">M&M</span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
+          <br>
+          <br>
+          <button type="button" class="btn btn-pink">Hacer
+            pedido</button>
+        </form>
       </div>
-      <div>
-        <label for="phone">Teléfono</label><br>
-        <input type="tel" name="phone" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}"
-          title="Un número de teléfono válido se compone de un área de código de 3 dígitos entre paréntesis, un espacio, los tres primeros dígitos del número, un espacio o guión (-) y cuatro dígitos más"
-          required>
-      </div>
-      <div>
-        <label for="email">Correo electrónico</label><br>
-        <input type="email" id="email" name="email">
-      </div>
-      <div>
-        <label for="description">Descripción de tu pastel</label><br>
-        <textarea name="description" id="description" cols="30" rows="10"></textarea>
-      </div>
-      <div>
-        <fieldset>
-          <legend>Sabores disponibles</legend>
-          <label><input type="checkbox" id="chocolate" value="chocolate"> Chocolate</label><br>
-          <label><input type="checkbox" id="fresa" value="fresa"> Fresa</label><br>
-          <label><input type="checkbox" id="vainilla" value="vainilla"> Vainilla</label><br>
-        </fieldset>
-      </div>
-      <div>
-        <fieldset>
-          <legend>Decoraciones</legend>
-          <label><input type="checkbox" id="chispas_chocolate" value="chispas_chocolate"> Chispas de
-            chocolate</label><br>
-          <label><input type="checkbox" id="mermelada_fresa" value="mermelada_fresa"> Mermelada de fresa</label><br>
-          <label><input type="checkbox" id="fondam" value="fondam"> Dibujo de fondam</label><br>
-        </fieldset>
-      </div>
-      <br>
-      <br>
-      <input type="submit" value="Hacer pedido">
-    </form>
+    </section>
+
   </main>
-  <footer class="container mx-auto">
-    <div>
-      <p>La Tía - Pasteles</p>
+  <footer class="bg-pink-600 text-white text-center">
+    <div class="p-4">
+      <p class="mb-4 font-semibold text-lg">Pasteles - La Tía</p>
       <ul>
-        <li>
+        <li class="mb-2">
           <address>Some address</address>
         </li>
-        <li>Teléfono: 983 369 7854</li>
-        <li>Horario: Lun - Vie de 9:00 a 21:00</li>
+        <li class="mb-2">Teléfono: 983 369 7854</li>
+        <li class="mb-2">Horario: Lun - Vie de 9:00 a 21:00</li>
       </ul>
     </div>
   </footer>
