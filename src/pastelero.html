@@ -5,25 +5,105 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pastelero</title>
-  <link href="/dist/output.css" rel="stylesheet">
+  <title>Pastelería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="assets/css/pasteleria_build.css" rel="stylesheet">
+  <link href="assets/css/pastelero_build.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="container mx-auto">
-    <div class="">
-      <section class="logo">
-        <img src="/src/assets/img/logo.png" alt="Logo" width="150px">
-      </section>
-      <nav class="">
-        <ul class="flex">
-          <li class="mx-4"><a href="./index.html">Clientes</a></li>
-          <li class="mx-4"><a href="./pastelero.html">Pastelero</a></li>
+  <header>
+    <div class="app-bar">
+      <h2 class="app-bar-title">PASTELES LA TÍA</h2>
+      <nav class="app-bar-nav">
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li class="underline"><a href="./pastelero.html">Pastelero</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main></main>
+  <main>
+    <div class="container">
+      <h1 class="font-bold text-lg mb-4">Administración</h1>
+      <section class="product-info">
+        <article>
+          <h2 class="product-title">Sabores</h2>
+          <dl class="product-list">
+            <dt>Chocolate</dt>
+            <dd>5</dd>
+            <dt>Fresa</dt>
+            <dd>3</dd>
+            <dt>Frambuesa</dt>
+            <dd>4</dd>
+          </dl>
+        </article>
+        <article>
+          <h2 class="product-title">Decoraciones</h2>
+          <dl class="product-list">
+            <dt>Chispas</dt>
+            <dd>5</dd>
+            <dt>Frutas</dt>
+            <dd>3</dd>
+            <dt>M&M</dt>
+            <dd>4</dd>
+          </dl>
+        </article>
+      </section>
+    </div>
+    <section class="orders">
+      <div class="container">
+        <ul class="order-list">
+          <li class="order-list-item">
+            <div class="order-list-content">
+              <div class="order-list-title">
+                <span class="order-name">Jane Doe</span>
+                <span class="order-date">Pedido el: 01/01/20 13:00</span>
+              </div>
+              <div class="container">
+                <dl class="order-config">
+                  <dt>Pastel de:</dt>
+                  <dd>Chocolate con fresa</dd>
+                  <dt>con Decoraciones de:</dt>
+                  <dd>Chispas con M&M</dd>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="order-list-item">
+            <div class="order-list-content">
+              <div class="order-list-title">
+                <span class="order-name">John Doe</span>
+                <span class="order-date">Pedido el: 01/01/20 13:00</span>
+              </div>
+              <div class="container">
+                <dl class="order-config">
+                  <dt>Pastel de:</dt>
+                  <dd>Chocolate con fresa</dd>
+                  <dt>con Decoraciones de:</dt>
+                  <dd>Chispas con M&M</dd>
+                </dl>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-pink-600 text-white text-center">
+    <div class="p-4">
+      <p class="mb-4 font-semibold text-lg">Pasteles - La Tía</p>
+      <ul>
+        <li class="mb-2">
+          <address>Some address</address>
+        </li>
+        <li class="mb-2">Teléfono: 983 369 7854</li>
+        <li class="mb-2">Horario: Lun - Vie de 9:00 a 21:00</li>
+      </ul>
+    </div>
+  </footer>
 </body>
 
 </html>

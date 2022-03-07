@@ -876,6 +876,11 @@ select {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 :root {
   --header-height: 40px;
 }

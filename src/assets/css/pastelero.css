@@ -1,0 +1,67 @@
+.debug {
+  border: 1px solid red;
+}
+
+header {
+  @apply bg-pink-600;
+}
+
+main {
+  @apply mt-2 min-h-screen;
+}
+
+.container {
+  @apply px-4;
+}
+
+.product-info {
+  @apply grid grid-cols-2 gap-4 mb-4;
+}
+
+.product-info>article {
+  @apply p-2 bg-white rounded border shadow-md;
+}
+
+.product-title {
+  @apply text-center text-red-500 mb-4;
+}
+
+.product-list {
+  @apply grid grid-cols-2;
+}
+
+.product-list>dd {
+  @apply text-right;
+}
+
+.order-list-item {
+  @apply bg-white p-4 border border-b-0;
+}
+
+.order-list-item:first-child {
+  @apply rounded-tr rounded-tl;
+}
+
+.order-list-item:last-child {
+  @apply border-b rounded-br rounded-bl;
+}
+
+.order-list-item:hover {
+  @apply scale-105 border-b shadow cursor-pointer;
+}
+
+.order-list-title {
+  @apply mb-4;
+}
+
+.order-name {
+  @apply text-red-500 font-bold text-lg mr-4
+}
+
+.order-date {
+  @apply text-gray-500 font-light text-xs
+}
+
+.order-config {
+  @apply grid grid-cols-2;
+}
