@@ -22,13 +22,22 @@ header {
 }
 
 main {
-  margin-top: -42px;
+  margin-top: -72px;
 }
 
 
 .app-bar {
   @apply flex justify-between p-2 container mx-auto;
   min-width: 340px;
+}
+
+.logo {
+  @apply flex items-center;
+}
+
+.app-bar-logo {
+  @apply rounded-full mr-4;
+  width: 10%;
 }
 
 .app-bar-title {
